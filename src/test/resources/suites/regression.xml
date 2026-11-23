@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="iOS Regression Suite" parallel="methods" thread-count="1" verbose="2">
+    <test name="Home Screen Tests">
+        <classes>
+            <class name="com.automation.tests.HomeTest"/>
+        </classes>
+    </test>
+
+    <test name="Settings Tests">
+        <classes>
+            <class name="com.automation.tests.SettingsTest"/>
+        </classes>
+    </test>
+</suite>

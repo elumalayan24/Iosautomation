@@ -1,0 +1,39 @@
+appium:
+  serverUrl: "http://127.0.0.1:4723"
+  newCommandTimeout: 300
+  launchTimeout: 120000
+
+ios:
+  platformName: "iOS"
+  automationName: "XCUITest"
+  platformVersion: "27.2"
+  deviceName: "iPhone 18 Pro"
+  udid: "CBBF0742-534C-4664-8C68-FBF272383730"
+  bundleId: ""
+  app: ""
+  noReset: false
+  fullReset: false
+  wdaLocalPort: 8100
+  useNewWDA: true
+  showXcodeLog: false
+  waitForQuiescence: true
+  maxTypingFrequency: 60
+
+timeouts:
+  implicitWait: 10
+  explicitWait: 30
+  pageLoad: 60
+  pollingInterval: 500
+
+retry:
+  maxAttempts: 3
+  delayBetweenRetries: 2
+
+screenshots:
+  onFailure: true
+  onPass: false
+  directory: "target/screenshots"
+
+reports:
+  extentReportPath: "target/reports/extent-report.html"
+  allureResultsDir: "target/allure-results"
